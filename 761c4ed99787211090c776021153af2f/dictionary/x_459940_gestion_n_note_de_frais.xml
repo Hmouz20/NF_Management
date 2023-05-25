@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="180d0e9d9787211090c776021153af0a" label="Note de frais" max_length="40" name="x_459940_gestion_n_note_de_frais" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Libelle" max_length="40" name="libelle" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Numero" max_length="40" name="numero" type="string"/>
+        <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="Prix" max_length="20" name="prix" type="price"/>
+        <element attributes="encode_utf8=false" label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="user"/>
+        </index>
+    </element>
+</database>
